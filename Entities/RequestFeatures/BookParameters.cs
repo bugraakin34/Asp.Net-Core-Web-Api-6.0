@@ -5,6 +5,13 @@
         public uint MinPrice { get; set; }
         public uint MaxPrice { get; set; } = 1000;
         public bool VaildPriceRange => MaxPrice > MinPrice;
+
+        public String? SearchTerm { get; set; }
+
+        public BookParameters()
+        {
+            OrderBy = "Id";
+        }
     }
 
 }
